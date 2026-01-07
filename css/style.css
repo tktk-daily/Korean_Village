@@ -1,24 +1,20 @@
-/* --------------------
-   Base
--------------------- */
+/* ===== base ===== */
 
 body {
   margin: 0;
-  font-family: 'Noto Serif JP', serif;
+  font-family: serif;
   background: #faf9f7;
   color: #2f2f2f;
   line-height: 1.8;
 }
 
-/* --------------------
-   Header
--------------------- */
+/* ===== header ===== */
 
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255,255,255,0.9);
   border-bottom: 1px solid #ddd;
   z-index: 1000;
 }
@@ -32,10 +28,6 @@ body {
   align-items: center;
 }
 
-.logo {
-  font-weight: 600;
-}
-
 .nav a {
   margin-left: 1rem;
   text-decoration: none;
@@ -43,13 +35,13 @@ body {
   font-size: 0.9rem;
 }
 
-/* --------------------
-   Hero
--------------------- */
+/* ===== hero ===== */
 
 .hero {
   height: 90vh;
-  background: url('../images/hero.jpg') center / cover no-repeat;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,14 +49,11 @@ body {
 }
 
 .hero h1 {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255,255,255,0.85);
   padding: 2rem 3rem;
-  font-weight: 600;
 }
 
-/* --------------------
-   Section
--------------------- */
+/* ===== section ===== */
 
 .section {
   max-width: 900px;
@@ -77,13 +66,11 @@ body {
   margin-bottom: 2rem;
 }
 
-/* --------------------
-   Menu
--------------------- */
+/* ===== menu ===== */
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 1.5rem;
 }
 
@@ -94,17 +81,13 @@ body {
   text-align: center;
 }
 
-/* --------------------
-   Access
--------------------- */
+/* ===== access ===== */
 
 .access {
   text-align: center;
 }
 
-/* --------------------
-   Footer
--------------------- */
+/* ===== footer ===== */
 
 .footer {
   background: #333;
@@ -114,17 +97,11 @@ body {
   font-size: 0.8rem;
 }
 
-/* --------------------
-   Responsive
--------------------- */
+/* ===== responsive ===== */
 
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 1rem;
     padding: 1.5rem;
-  }
-
-  .nav a {
-    margin-left: 0.5rem;
   }
 }
